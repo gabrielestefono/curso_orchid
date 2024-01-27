@@ -11,7 +11,8 @@ Este repositório contém o meu progresso e os projetos desenvolvidos durante a 
 - [Bootstrap](https://getbootstrap.com/)
 
 ## Commits
-- 1 - Iniciando o Projeto
-- 2 - Instalando o Orchid
+- 01 - Iniciando o Projeto
+- 02 - Instalando o Orchid
+- 03 - Configurações
 
 Na pasta "curso" dentro do repositório, estão documentados o passo a passo de cada etapa do curso.
