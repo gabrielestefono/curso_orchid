@@ -14,5 +14,6 @@ Este repositório contém o meu progresso e os projetos desenvolvidos durante a 
 - 01 - Iniciando o Projeto
 - 02 - Instalando o Orchid
 - 03 - Configurações
+- 04 - Branding
 
 Na pasta "curso" dentro do repositório, estão documentados o passo a passo de cada etapa do curso.
