@@ -18,6 +18,7 @@ use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
 use App\Orchid\Screens\TaskScreen;
+use App\Orchid\Screens\StateScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
 
@@ -92,10 +93,6 @@ Route::screen('example', ExampleScreen::class)
         ->parent('platform.index')
         ->push('Example Screen'));
 
-Route::screen('/examples/form/fields', ExampleFieldsScreen::class)->name('platform.example.fields');
-Route::screen('/examples/form/advanced', ExampleFieldsAdvancedScreen::class)->name('platform.example.advanced');
-Route::screen('/examples/form/editors', ExampleTextEditorsScreen::class)->name('platform.example.editors');
-Route::screen('/examples/form/actions', ExampleActionsScreen::class)->name('platform.example.actions');
 Route::screen('/task', TaskScreen::class)
     ->name('platform.task')
     ->breadcrumbs(function (Trail $trail){
@@ -103,6 +100,12 @@ Route::screen('/task', TaskScreen::class)
             ->parent('platform.index')
             ->push('Task');
     });
+
+Route::screen('/examples/form/fields', ExampleFieldsScreen::class)->name('platform.example.fields');
+Route::screen('/examples/form/advanced', ExampleFieldsAdvancedScreen::class)->name('platform.example.advanced');
+Route::screen('/examples/form/editors', ExampleTextEditorsScreen::class)->name('platform.example.editors');
+Route::screen('/examples/form/actions', ExampleActionsScreen::class)->name('platform.example.actions');
+Route::screen('state', StateScreen::class)->name('state');
 
 Route::screen('/examples/layouts', ExampleLayoutsScreen::class)->name('platform.example.layouts');
 Route::screen('/examples/grid', ExampleGridScreen::class)->name('platform.example.grid');
